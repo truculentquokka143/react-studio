@@ -1,9 +1,103 @@
 /* Add styling for your page here */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 .App {
-
+    background-color: rgb(192, 210, 239);
+    font-family: 'Source Sans Pro', sans-serif;
+    color:rgb(96, 83, 83);
 }
 
-.BakeryItem {
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 4vw;
+}
+
+hr {
+    margin-bottom: 6vh;
+}
+
+.page {
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    row-gap: 50px;
+    column-gap: 50px;
+    max-width: 80%;
+}
+
+.bakery-item {
+    background-color: rgb(245, 247, 228);
+    border-radius: 20px;
+    padding: 50px;
+    width: 24vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price-and-cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    border-radius: 20px;
+    align-items: center;
+}
+
+.dessert-photo {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    font-weight: bold;
+}
+
+button {
+    padding: 1vw;
+    border-radius: 20px;
+    transition-duration: 0.4s;
+    background-color: rgb(254, 217, 203);
+    border: 0px;
+}
   
+button:hover {
+    background-color:  rgb(245, 194, 174);
 }
+
+.cart {
+    display: flex;
+    flex-flow: column;
+    width: 25vw;
+    background-color: rgb(245, 247, 228);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.cart-item {
+    font-size: 20px;
+}
+
+.total-price {
+    font-size: 20px;
+    color: rgb(243, 150, 159);  
+    font-weight: bold;  
+}
+
+.cart-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
